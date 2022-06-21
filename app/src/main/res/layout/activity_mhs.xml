@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tema"
+    android:padding="12dp"
+    tools:context="ui.MhsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/a"
+        android:id="@+id/resepImageView"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:lineHeight="12pt"
+        android:text="Hai, Namaku Dilan...Kamu, %s yah.Aku Ramal nanti kita ketemu di kantin"
+        android:id="@+id/resepTextView"/>
+
+    <Button
+        android:id="@+id/pilihan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/rounded_form"
+        android:text="Diam"
+        android:textSize="6pt" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pilihan2"
+        android:background="@drawable/rounded_form"
+        android:textSize="6pt"
+        android:text="Bodo Amat"
+        android:layout_marginTop="530dp"/>
+
+
+</RelativeLayout>
