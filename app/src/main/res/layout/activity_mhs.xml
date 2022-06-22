@@ -2,36 +2,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@color/tema"
-    android:padding="12dp"
+    android:background="@color/purple_200"
     tools:context="ui.MhsActivity">
 
     <ImageView
+        android:id="@+id/resepImageView"
         android:layout_width="match_parent"
         android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/a"
-        android:id="@+id/resepImageView"
-        android:layout_centerHorizontal="true"/>
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/a" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="370dp"
+        android:layout_below="@+id/resepImageView"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:lineHeight="12pt"
-        android:text="Hai, Namaku Dilan...Kamu, %s yah.Aku Ramal nanti kita ketemu di kantin"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="7pt"
+        android:lineHeight="29sp"
+        android:text="Hai, Namaku Dilan...Kamu ,%1$s, yah.Aku Ramal nanti kita ketemu di kantin"
         android:id="@+id/resepTextView"/>
 
     <Button
         android:id="@+id/pilihan1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="470dp"
+        android:layout_above="@+id/pilihan2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rounded_form"
         android:text="Diam"
         android:textSize="6pt" />
@@ -42,8 +48,11 @@
         android:id="@+id/pilihan2"
         android:background="@drawable/rounded_form"
         android:textSize="6pt"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:text="Bodo Amat"
-        android:layout_marginTop="530dp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
 
 
 </RelativeLayout>
